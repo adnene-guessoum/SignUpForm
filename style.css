@@ -1,3 +1,57 @@
 body {
 	background-color: lightgrey;
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+    font-family: Ningst;
+    font-weight: bold;
+    src: url("./public/font/Ningst_Only_Peace/Ningst_Only_Peace_Font.otf") format("opentype");
+}
+
+#form-page {
+	display: flex;
+}
+
+.sidebar {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-image: url("./public/images/assurance-vie.jpg");
+	background-size: cover;
+	height: 100vh;
+}
+
+.banner {
+	background-color: #27272740;
+	color: black;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 2em;
+	margin-top: 25vh;
+	padding: 2em;
+}
+
+.service-title {
+	font-family: Ningst;
+	font-size: 4em;
+}
+
+footer {
+	text-align: center;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.text-header {
+	background-color: white;
+
 }
