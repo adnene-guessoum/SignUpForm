@@ -17,6 +17,7 @@
 					Photo available on <a href="https://www.lerevenu.com/sites/site/files/styles/img_lg/public/field/image/assurance-vie-adobestock_0.jpg?itok=VkEgyN65" target="_blank">Le revenu.com</a>.
 				</footer>
 			</div>
+
 			<div class="content">
 				<div class="text-header">
 					<p>This is not a real online service ! You know you need something like this in your life to help you realize your deepest dreams.<br/>
@@ -24,13 +25,69 @@
 					<p>You <em>know</em> you want to.</p>
 				</div>	
 
-				<form action="index_submit" method="post" accept-charset="utf-8">
-					
-				</form>
+				<div class="form-section-container">
+					<h2>Let's do this!</h2>
+					<form action="#" method="post" accept-charset="utf-8" id="form">
 
-				<div class="sumbmit-section">
-					<button>Create Account</button>
-					
+						<div class="form-left">
+							<div class="input-section">
+								<label for="first_name">
+								FIRST NAME
+								</label>
+								<input type="text" placeholder="John" name="first_name" id="first_name"/>
+							</div>
+
+							<div class="input-section">
+								<label for="email">
+									EMAIL
+								</label>
+								<input type="email" placeholder="example@mail.com" name="email" id="email" required />
+							</div>
+
+							<div class="input-section">
+								<label for="password">
+								PASSWORD
+								</label>
+								<input type="password" name="password" id="password" placeholder="password" required />	
+							</div>
+
+
+						</div>
+
+						<div class="form-right"> 
+
+							<div class="input-section">
+								<label for="last_name">
+								LAST NAME
+								</label>
+								<input type="text" placeholder="Smith" name="last_name" id="last_name" required />	
+							</div>
+
+							<div class="input-section">
+								<label for="phone_number">
+									PHONE NUMBER
+								</label>
+								<input type="tel" name="phone_number" placeholder="0XXXXXXXXX" id="phone_number"/>	
+							</div>
+
+							<div class="input-section">
+								<label for="confirmation">
+								CONFIRM PASSWORD
+								</label>
+								<input type="password" name="Confirm password" placeholder="password" id="confirmation"/>	
+							</div>
+
+						</div>
+					</form>
+
+				</div>
+
+				<div class="submit-section">
+					<button type="submit" value="submit">Create Account</button>
+					<div class="signup">
+						Already have an account ? <a href="/login" target="_blank">Log in</a>
+					</div>
+
 				</div>
 			</div>
 
