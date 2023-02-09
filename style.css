@@ -37,7 +37,7 @@ body {
 
 .service-title {
 	font-family: Ningst;
-	font-size: 4em;
+	font-size: 3em;
 }
 
 footer {
@@ -53,12 +53,19 @@ footer {
 }
 
 .text-header {
-	margin-top: 20vh;
+	margin-top: 15vh;
+	margin-bottom: 3vh;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.text-header > em {
+	font-weight: italic;
 }
 
 #form {
 	display: flex;
-	gap: 2em;
+	gap: 3em;
 }
 
 .form-left, .form-right {
@@ -91,10 +98,16 @@ footer {
 	padding: 0.4em;
 }
 
-input[type="password"] {
+input:invalid:focus {
+	border: "solid 1px red";
+	box-shadow: 10px 5px 5px red;
+}
 
+.error {
+	color: red;
+}
 
-
+/* submit section style */
 
 .submit-section {
 	margin-top: 2em;
@@ -116,3 +129,19 @@ button[type="submit"]:hover {
 .signup {
 	margin-top: 1em;
 }
+
+.signup > a:link {
+	text-decoration: none;
+	font-weight: bold;
+	color: #800080;
+}
+
+.signup > a:hover {
+	text-decoration: underline;
+}
+
+.signup > a:visited {
+	text-decoration: underline;
+  color: green;
+}
+

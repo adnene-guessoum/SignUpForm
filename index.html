@@ -32,9 +32,11 @@
 						<div class="form-left">
 							<div class="input-section">
 								<label for="first_name">
-								FIRST NAME
+									FIRST NAME
 								</label>
-								<input type="text" placeholder="John" name="first_name" id="first_name"/>
+								<input type="text" placeholder="John" name="first_name" id="first_name" required />
+								<div class="error">
+								</div>
 							</div>
 
 							<div class="input-section">
@@ -42,13 +44,17 @@
 									EMAIL
 								</label>
 								<input type="email" placeholder="example@mail.com" name="email" id="email" required />
+								<div class="error">
+								</div>
 							</div>
 
 							<div class="input-section">
 								<label for="password">
-								PASSWORD
+									PASSWORD
 								</label>
 								<input type="password" name="password" id="password" placeholder="password" required />	
+								<div class="error">
+								</div>
 							</div>
 
 
@@ -58,23 +64,29 @@
 
 							<div class="input-section">
 								<label for="last_name">
-								LAST NAME
+									LAST NAME
 								</label>
 								<input type="text" placeholder="Smith" name="last_name" id="last_name" required />	
+								<div class="error">
+								</div>
 							</div>
 
 							<div class="input-section">
 								<label for="phone_number">
 									PHONE NUMBER
 								</label>
-								<input type="tel" name="phone_number" placeholder="0XXXXXXXXX" id="phone_number"/>	
+								<input type="tel" name="phone_number" placeholder="0XXXXXXXXX" id="phone_number" required />	
+								<div class="error">
+								</div>
 							</div>
 
 							<div class="input-section">
 								<label for="confirmation">
-								CONFIRM PASSWORD
+									CONFIRM PASSWORD
 								</label>
-								<input type="password" name="Confirm password" placeholder="password" id="confirmation"/>	
+								<input type="password" name="Confirm password" placeholder="password" id="confirmation" required/>	
+								<div class="error">
+								</div>
 							</div>
 
 						</div>
