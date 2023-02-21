@@ -10,9 +10,9 @@
 		<div id="form-page">
 			<div class="sidebar">
 				<div class="banner">
-					<img src="./public/images/piggy-bank-logo.png" alt="logo piggy bank"/>	
+					<img src="./public/images/piggy-bank-logo.png" alt="logo piggy bank"/>
 					<span class="service-title">Piggy Bank</span>
-				</div>	
+				</div>
 				<footer>
 					Photo available on <a href="https://www.lerevenu.com/sites/site/files/styles/img_lg/public/field/image/assurance-vie-adobestock_0.jpg?itok=VkEgyN65" target="_blank">Le revenu.com</a>.
 				</footer>
@@ -21,13 +21,13 @@
 			<div class="content">
 				<div class="text-header">
 					<p>This is not a real online service ! You know you need something like this in your life to help you realize your deepest dreams.<br/>
-					Sign up <em>now</em> to get started.</p>	
+					Sign up <em>now</em> to get started.</p>
 					<p>You <em>know</em> you want to.</p>
-				</div>	
+				</div>
 
 				<div class="form-section-container">
 					<h2>Let's do this!</h2>
-					<form action="#" method="post" accept-charset="utf-8" id="form">
+					<form action="http://httpbin.org/post" method="post" accept-charset="utf-8" id="form">
 
 						<div class="form-left">
 							<div class="input-section">
@@ -43,7 +43,7 @@
 								<label for="email">
 									EMAIL
 								</label>
-								<input type="email" placeholder="example@mail.com" name="email" id="email" required />
+								<input type="email" placeholder="example@mail.com" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required />
 								<div class="error">
 								</div>
 							</div>
@@ -52,7 +52,7 @@
 								<label for="password">
 									PASSWORD
 								</label>
-								<input type="password" name="password" id="password" placeholder="password" required />	
+								<input type="password" name="password" id="password" placeholder="password" required />
 								<div class="error">
 								</div>
 							</div>
@@ -60,13 +60,13 @@
 
 						</div>
 
-						<div class="form-right"> 
+						<div class="form-right">
 
 							<div class="input-section">
 								<label for="last_name">
 									LAST NAME
 								</label>
-								<input type="text" placeholder="Smith" name="last_name" id="last_name" required />	
+								<input type="text" placeholder="Smith" name="last_name" id="last_name" required />
 								<div class="error">
 								</div>
 							</div>
@@ -75,7 +75,7 @@
 								<label for="phone_number">
 									PHONE NUMBER
 								</label>
-								<input type="tel" name="phone_number" placeholder="0XXXXXXXXX" id="phone_number" required />	
+								<input type="tel" name="phone_number" placeholder="0XXXXXXXXX" id="phone_number" pattern="/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im" required />
 								<div class="error">
 								</div>
 							</div>
@@ -84,7 +84,7 @@
 								<label for="confirmation">
 									CONFIRM PASSWORD
 								</label>
-								<input type="password" name="Confirm password" placeholder="password" id="confirmation" required/>	
+								<input type="password" name="Confirm password" placeholder="password" id="confirmation" required/>
 								<div class="error">
 								</div>
 							</div>
