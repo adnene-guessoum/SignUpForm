@@ -75,7 +75,7 @@
 								<label for="phone_number">
 									PHONE NUMBER
 								</label>
-								<input type="tel" name="phone_number" placeholder="0XXXXXXXXX" id="phone_number" pattern="/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im" required />
+								<input type="tel" name="phone_number" placeholder="0XXXXXXXXX" id="phone_number" pattern="^(?:(?:\+|00)33[\s.-]{0,3}(?:\(0\)[\s.-]{0,3})?|0)[1-9](?:(?:[\s.-]?\d{2}){4}|\d{2}(?:[\s.-]?\d{3}){2})$" required />
 								<div class="error">
 								</div>
 							</div>
